@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="32dp"
+        android:text="Kök Bul"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/sabitText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/holo_red_light" />
+
+    <EditText
+        android:id="@+id/katsayiText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="125dp"
+        android:ems="10"
+        android:hint="Kat Sayı"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/sonucView"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="X   +"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/katsayiText"
+        app:layout_constraintStart_toEndOf="@+id/katsayiText"
+        app:layout_constraintTop_toTopOf="@+id/sabitText" />
+
+    <EditText
+        android:id="@+id/sabitText"
+        android:layout_width="76dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="178dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:hint="Sabit"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="264dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="131dp"
+        android:text="= 0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/sonucView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toEndOf="@+id/katsayiText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="162dp"
+        android:layout_marginStart="81dp"
+        android:onClick="hesaplaButton"
+        android:text="Kökleri Bul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sonucView"
+        app:layout_constraintTop_toBottomOf="@+id/sabitText" />
+
+    <TextView
+        android:id="@+id/sonucView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+</android.support.constraint.ConstraintLayout>
