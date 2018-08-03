@@ -1,4 +1,4 @@
-# MathApp
+# MathApp With Kotlin
 Matematik Formullerini içeren Uyglama Yazacağım.  (This Repository is for Math Formula)
 
 
